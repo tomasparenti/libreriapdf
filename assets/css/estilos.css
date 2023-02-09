@@ -1,0 +1,165 @@
+html{
+    height: 100%;
+}
+
+.body{
+   min-height: 100%;
+}
+
+.grid-container{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+.navegacion{
+    list-style: none;
+}
+
+.navegacion li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.navegacion li{
+    display: inline-block;
+}
+
+.navegacion li a:hover{
+    background-color: darkgrey;
+}
+
+.boton{
+    font-size: 10px;
+    justify-content: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.video{
+    width: 300px;
+    height: 170px;
+    margin: 20px;
+}
+
+.main img{
+    width: 300px;
+    margin: 20px;
+}
+
+<!-- desarrollo >
+
+.main div img{
+    justify-content: left;
+    margin: 30px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lavender;
+}
+
+.footer a img{
+    width: 40px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: 
+    "header" 30px
+    "navbar" 50px
+    "main"   auto
+    "sidebar" 50px
+    "footer"  auto; 
+}
+
+@media (min-width: 600px) {
+    .grid-container{
+        grid-template: 
+    "header" 30px
+    "navbar" 50px
+    "main"   auto
+    "sidebar" 50px
+    "footer"  auto; 
+    }
+        
+    .navbar{
+        grid-area: navbar;
+        justify-content: right;
+    }
+
+    .boton{
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .main .video{
+        width: 600px;
+        height: 500px;
+     }
+
+    .main img{
+        width: 600px;
+        margin: 20px;
+    }
+
+    .footer a img{
+        width: 50px;
+        margin: 30px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+    "header  header  header"  50px
+    "navbar navbar navbar"    80px
+    "main  main    sidebar"   auto
+    "footer  footer  footer"  auto /
+    200px    auto     300px ; 
+    }
+        
+    .navbar{
+        grid-area: navbar;
+        justify-content: right;
+    }
+
+    .main .video{
+       width: 800px;
+       height: 500px;
+    }
+    
+    .main img{
+        width: 800px;
+        margin: 20px;
+    }
+
+    .footer a img{
+        width: 80px;
+        margin: 60px;
+        justify-content: center;
+    }
+    
+}
